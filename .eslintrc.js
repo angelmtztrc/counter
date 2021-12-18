@@ -4,7 +4,8 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
+    'prettier/prettier': ['error', { singleQuote: true, trailingComma: false }],
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
-  },
+    '@typescript-eslint/no-shadow': ['error']
+  }
 };
